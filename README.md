@@ -1,7 +1,7 @@
 Ryan Microservice A - gameData REST API<br/>
 ----------------------------------------<br/>
 How to use:<br/>
-The API has seven endpoints, some with authorization and some with json bodies. Here are the URL's for all of them plus sample python snippets on how to call them.<br/>
+The API has seven endpoints, some with authorization and some with json bodies. Here are the URL's for all of them plus sample python snippets on how to call them. Also included is a UML Diagram between a client, the server, and the database.<br/>
 API URL's:<br/>
 Base URL: http://localhost:54321/api/v1<br/>
 POST /game/new<br/>
@@ -15,7 +15,8 @@ DELETE /game/{id}<br/>
 ###########################################################################<br/>
 # 1 - POST new game<br/>
 new_game_url = base_url + '/game/new'<br/>
-print(new_game_url)<br/>
+print(new_game_url)![20250224_054631313_iOS](https://github.com/user-attachments/assets/a09cb139-0063-4905-9935-813942b85f7a)
+<br/>
 headers = {<br/>
     'Authorization': f'Bearer RyanCS361BearerToken',<br/>
     'Content-Type': 'application/json'<br/>
@@ -116,3 +117,7 @@ ponse = requests.delete(delete_url)<br/>
 print(response.status_code)<br/>
 print(response.json())<br/>
 ###########################################################################<br/>
+#UML Diagram
+![20250224_054631313_iOS](https://github.com/user-attachments/assets/bb160e57-db04-4dcf-8661-b9930d6f27ec)
+
+

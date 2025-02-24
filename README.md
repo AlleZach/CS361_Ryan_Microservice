@@ -15,7 +15,7 @@ DELETE /game/{id}<br/>
 ###########################################################################<br/>
 # 1 - POST new game<br/>
 new_game_url = base_url + '/game/new'<br/>
-print(new_game_url)![20250224_054631313_iOS](https://github.com/user-attachments/assets/a09cb139-0063-4905-9935-813942b85f7a)
+print(new_game_url)
 <br/>
 headers = {<br/>
     'Authorization': f'Bearer RyanCS361BearerToken',<br/>
